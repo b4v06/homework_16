@@ -614,3 +614,10 @@ div.btn-group>.btn-check {
         display: block;
     }
 }
+
+.footer-button {
+    margin: 20px 0 0 50px;
+    @media screen and (min-width: 1400px) {
+        margin: 0;
+    }
+}
