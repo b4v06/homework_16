@@ -94,14 +94,85 @@
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                         duis enim velit mollit. </p>
                     <h2>Choose currency</h2>
-                    <div class="main__column__currency"></div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <img src="./public/img/arrow-left.png" alt="Arrow Left">
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">USD</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">BTC</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">USDT</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio4">ETH</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio5">DOGE</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio6">BNB</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio7">LTH</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio8">XRP</label>
+
+                        <img src="./public/img/arrow-right.png" alt="Arrow Right">
+                    </div>
                     <h3>Amount & Payment process</h3>
-                    <div class="main__column__grid"></div>
-                    <div class="main__column__ammount"></div>
-                    <div class="main__column__button"></div>
+                    <div class="main__column__grid">
+                        <p>Choose Payment</p>
+                        <p>Standart</p>
+                        <div class="main__column__grid__payment">
+                            <img src="./public/img/etherium.png" alt="Logo of Ethereum">
+                            <span>Ethereum</span>
+                            <img class="arrow-down" src="./public/svg/arrow-down.svg" alt="Arrow Down">
+                        </div>
+                        <div class="main__column__grid__flex">
+                            <div>
+                                <img src="./public/svg/circle.svg" alt="Circle">
+                                <span>ERC 20</span>
+                            </div>
+                            <div>
+                                <img src="./public/svg/circle.svg" alt="Circle">
+                                <span>BEP 20</span>
+                            </div>
+                            <div>
+                                <img src="./public/svg/circle.svg" alt="Circle">
+                                <span>TRC 20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__column__ammount">
+                        <span>Amount</span>
+                        <div class="main__column__ammount__payment">
+                            <img src="./public/svg/blue-wallet.svg" alt="Icon of Wallet">
+                            <span>1000 </span>
+                            <button>USDT</button>
+                        </div>
+                    </div>
+                    <div class="main__column__numbers">
+                        <span>100</span>
+                        <span>500</span>
+                        <span>1000</span>
+                        <span>2000</span>
+                        <span>10000</span>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Continue
+                    </button>
                 </div>
                 <!-- Blue rectangle -->
-                <div class="main__rectangle"></div>
+                <div class="main__rectangle">
+                    <h2>Some</h2>
+                    <h3>Advertisment</h3>
+                    <button>Read more</button>
+                    <p>Velit officia consequat duis enim velit mollit. </p>
+                </div>
             </div>
         </div>
     </main>
@@ -162,6 +233,26 @@
             </div>
         </div>
     </footer>
+    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+      </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 
